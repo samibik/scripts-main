@@ -5,11 +5,11 @@ var canvas = document.querySelector('canvas');
 document.getElementById('toggleColor').addEventListener('click', function (evt) {
     var cardTemplate = document.querySelector(".card")
     // Check current state
-    if (evt.target.innerHTML === "Dark Theme") {
+    if (evt.target.innerHTML === "مظهر داكن") {
         svg.style.fill = "white";
         cardTemplate.style.backgroundColor = "#191919";
         cardTemplate.firstElementChild.style.color = "white";
-        evt.target.innerHTML = "Light Theme";
+        evt.target.innerHTML = "مظهر شفاف";
         document.getElementById("toggleColor").classList.remove('btn-dark');
         document.getElementById("toggleColor").classList.add('btn-light');
     } else {
